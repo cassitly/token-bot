@@ -5,6 +5,7 @@ Basic Usage: Create a fork of the repository, and create a codespace. And run th
 Then run ``node bot.js`` to start the bot.
 
 Or you can download the repository, install Nodejs, and do the same steps to install and start the bot.
+Then configure ``config.json`` to add your discord bot token.
 
 # Features
 - Admin commands for setting up token payouts, item requests, and configuring the bot.
