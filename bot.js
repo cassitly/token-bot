@@ -1,11 +1,17 @@
-const { Client, Intents } = require('discord.js');
+const { Client, GatewayIntentBits } = require('discord.js');
 const { token } = require('./config.json');
 const { setupCommands } = require('./commands/setup');
 const { signupCommands } = require('./commands/signup');
 const { requestCommands } = require('./commands/request');
 const { withdrawCommands } = require('./commands/withdraw');
 
-const client = new Client({ intents: [Intents.FLAGS.GUILDS, Intents.FLAGS.DIRECT_MESSAGES, Intents.FLAGS.GUILD_MESSAGES] });
+const client = new Client({
+    intents: [
+    GatewayIntentBits.Guilds,
+    GatewayIntentBits.DirectMessages,
+    GatewayIntentBits.GuildMessages
+  ]
+});
 
 let config = {
   signupChannel: null,
