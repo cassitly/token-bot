@@ -1,3 +1,11 @@
+# Token Usage
+To allow airline owners, of Aeronautica. To pay their members, in easy, accessible tokens. Which can be, later withdrawed into their ingame money.
+Basic Usage: Create a fork of the repository, and create a codespace. And run these commands:
+``npm install discord.js dotenv``, to  install dependencies.
+Then run ``node bot.js`` to start the bot.
+
+Or you can download the repository, install Nodejs, and do the same steps to install and start the bot.
+
 # Features
 - Admin commands for setting up token payouts, item requests, and configuring the bot.
 - Member interactions for token withdrawals, sign-ups, and item requests.
